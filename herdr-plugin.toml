@@ -1,0 +1,31 @@
+id = "jackcannon.tab-symbols"
+name = "Tab Symbols"
+version = "0.1.0"
+min_herdr_version = "0.9.5"
+description = "Put ★ ♠ ♣ ♦ ❤ before the labels of tabs 1 to 5"
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["bash", "sync.sh"]
+
+[[events]]
+on = "tab.created"
+command = ["bash", "sync.sh"]
+
+[[events]]
+on = "tab.closed"
+command = ["bash", "sync.sh"]
+
+[[events]]
+on = "tab.moved"
+command = ["bash", "sync.sh"]
+
+[[events]]
+on = "tab.renamed"
+command = ["bash", "sync.sh"]
+
+[[actions]]
+id = "sync"
+title = "Sync tab symbols"
+contexts = ["workspace"]
+command = ["bash", "sync.sh"]
