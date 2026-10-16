@@ -11,8 +11,9 @@ in each workspace:
 | 4 | ♦ |
 | 5 | ❤ |
 
-The symbols match the five macro keys on a keyboard. When the keys switch to tabs 1 to 5, the
-tab bar shows which key opens which tab:
+My keyboard has five macro keys, M1 to M5. The macro keys have custom keycaps that show these
+symbols, from M1 to M5: ★ ♠ ♣ ♦ ❤. That is the reason for these symbols and their order. When
+the macro keys switch to tabs 1 to 5, the tab bar shows which key opens which tab:
 
 ```text
 ★ api   ♠ tests   ♣ 3   ♦ docs   ❤ 5   6
