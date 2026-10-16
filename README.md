@@ -170,6 +170,40 @@ experimental.
 pane_history = true
 ```
 
+### Full config
+
+This is my complete `~/.config/herdr/config.toml`. It has the macro key binding and all the
+settings in this section. Copy it to a new computer in one step.
+
+```toml
+onboarding = false
+
+[theme]
+name = "vesper"
+auto_switch = false
+
+[ui]
+window_title = "herdr: {workspace}"
+agent_panel_sort = "priority"
+status_indicators = "symbols"
+tab_bar_right = [
+  { type = "datetime", format = "%H:%M" },
+]
+
+[ui.toast]
+delivery = "system"
+
+[keys]
+switch_tab = ["prefix+1..9", "ctrl+alt+1..9"]
+move_tab_previous = "alt+shift+left"
+move_tab_next = "alt+shift+right"
+switch_workspace = "prefix+shift+1..9"
+focus_agent = "prefix+alt+1..9"
+
+[experimental]
+pane_history = true
+```
+
 ## Uninstall
 
 ```bash
