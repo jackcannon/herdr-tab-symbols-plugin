@@ -86,6 +86,32 @@ Then set the macro keys in the keyboard software:
 Run `herdr server reload-config` to apply the change. Herdr accepts only `1..9` as a key range,
 so `ctrl+alt+0..9` does not work.
 
+### Set the macro keys in Keychron Launcher
+
+My keyboard is a Keychron keyboard. Use Keychron Launcher to set the macro keys. Keychron
+Launcher runs in the browser and needs a browser that supports WebHID, such as Chrome or Edge.
+
+1. Connect the keyboard to the computer with a USB cable.
+2. Go to <https://launcher.keychron.com/#/keymap>.
+3. Click **Connect**, then select your keyboard in the browser dialog.
+4. Select the **M1** key, then click **Key Combo**.
+5. Select **Ctrl** and **Alt/Option** as the modifier keys.
+6. Enter `1` as the primary key, then click **Save**.
+7. Make sure that the M1 key shows `LCA(KC_1)`. `LCA` means left Ctrl and left Alt, so the key
+   sends `ctrl+alt+1`.
+8. Do steps 4 to 7 again for M2 to M5. Use the primary key from this table:
+
+| Key | Symbol | Primary key | Key shows |
+| --- | --- | --- | --- |
+| M1 | ★ | `1` | `LCA(KC_1)` |
+| M2 | ♠ | `2` | `LCA(KC_2)` |
+| M3 | ♣ | `3` | `LCA(KC_3)` |
+| M4 | ♦ | `4` | `LCA(KC_4)` |
+| M5 | ❤ | `5` | `LCA(KC_5)` |
+
+Keychron Launcher saves the keymap on the keyboard. The macro keys work on all computers, and
+Keychron Launcher does not need to stay open.
+
 ## Other Recommended Settings
 
 These settings are not part of the plugin, but they work well with it. Add them to
